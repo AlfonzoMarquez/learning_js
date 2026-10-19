@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto 4 - Visualizar imagen</title>
+    <script>
+        function cambiar()
+        {
+            nombreImagen = document.getElementById('nombreImagen').value;
+            document.getElementById('imagen').src = nombreImagen;
+        }
+    </script>
+</head>
+<body>
+    <select id="nombreImagen" onchange="cambiar()">
+        <option value="img/escudoGuanenta.png">Escudo</option>
+        <option value="img/foto1.png">Foto 1</option>
+        <option value="img/foto2.png">Foto 2</option>
+    </select>
+    <br><br>
+    <img id="imagen" src="img/escudoGuanenta.png" alt="">
+</body>
+</html>

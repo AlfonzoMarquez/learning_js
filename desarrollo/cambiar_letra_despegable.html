@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto 5 - Formato de texto</title>
+    <script>
+        function cambiarEstilo() {
+            negrita = document.getElementById("idnegrita").value;
+            cursiva = document.getElementById("idcursiva").value;
+            
+            tecto = document.getElementById("idtexto");
+            tecto.style.fontWeight = negrita;
+            tecto.style.fontStyle = cursiva;
+        }
+    </script>
+</head>
+<body>
+    <div id="idtexto">texto de prueba...</div>
+    <br>
+    <select id="idnegrita" onchange="cambiarEstilo()">
+        <option value="normal">Normal</option>
+        <option value="bold">Negrita</option>
+    </select>
+
+    <select id="idcursiva" onchange="cambiarEstilo()">
+        <option value="normal">Normal</option>
+        <option value="italic">Cursiva</option>
+    </select>
+</body>
+</html>
